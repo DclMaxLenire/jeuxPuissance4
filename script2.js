@@ -1,8 +1,39 @@
 // Variable //
-var quiJoue;
+var quiJoue = 0;
 var choixCaseJoueur1;
 var choixCaseJoueur2;
+var playNow;
+var choixCase;
+var tableGame =    [[0, 0, 0, 0, 0, 0, 0],
+					[0, 0, 0, 0, 0, 0, 0],
+					[0, 0, 0, 0, 0, 0, 0],
+					[0, 0, 0, 0, 0, 0, 0],
+					[0, 0, 0, 0, 0, 0, 0],
+					[0, 0, 0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0, 0, 0]];
+
 // Démmarage du jeu //
+function turn()
+{
+	if(quiJoue == 0)
+	{
+		console.log("Joueur 1");
+		playerTurn = 1;
+	}
+	else
+	{
+		console.log("Joueur 2");
+		playerTurn = 0;
+	}
+}
+function playGame() {
+	playButton.addEventListener("click", function(){
+		if (!choixCaseJoueur1) {
+			choixCase.style.display = "block";
+			playNow(choixCaseJoueur1, choixCaseJoueur2);
+		}
+	});
+}
 // Joueur 1 Joue //
 // Récupération coordonés pions joueur 1 //
 // Verifier si vide //
