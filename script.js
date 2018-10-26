@@ -11,6 +11,7 @@ var myTable = document.getElementById("myTable");
 var x;
 var y;
 var cell =0;
+var choice = document.getElementById("td");
 
 
 // cola.addEventListener("click",     
@@ -30,8 +31,9 @@ var jeu= [[0,0,0,0,0,0,0,],
          [0,0,0,0,0,0,0,],
          [0,0,0,0,0,0,0,],
          [0,0,0,0,0,0,0,],
-         [0,0,0,0,0,0,0,],
+         [0,0,0,0,0,1,0,],
          [0,0,0,0,0,0,0,]];
+
 
 // Démmarage du jeu //
 // Joueur 1 Joue //
@@ -53,18 +55,31 @@ for(var i = 0; i < table.rows.length; i++)
             console.log(jeu[rIndex][cIndex]);
             jeu[rIndex][cIndex]= 1;
             console.log(jeu[rIndex][cIndex]);
+            jeu.forEach(Number => console.log(Number));
+           
         };
     }
 }
 
+table.addEventListener("click",
+        function (e) {
+            console.log(e);
+            console.log(e.target);
 
-jeu.forEach(function(callback) {
-        document.getElementById("myTable").cells;
-        backgroundColor="red";
-});
+        }
+        
+
+)
+// jeu.forEach(function(callback) {
+//         document.getElementById("myTable").cells;
+//         backgroundColor="red";
+// });
 
 
-    
+// function joueur1(rIndex,cIndex) {
+//     td.style.backgroundColor="red";
+
+// }  
     
 // }
 // Récupération coordonés pions joueur 1 //
