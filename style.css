@@ -1,8 +1,9 @@
 html {
     font-family:'Roboto', sans-serif;
-    background-image: url("image/back.jpg");
+    background-image: url("image/fond3.gif");
     height: 100%;
     width: 100%;
+    letter-spacing: 2px;
 }
 
 BODY {
@@ -18,8 +19,7 @@ BODY {
 
 h1 {
     text-align:center;
-    color: #FFFFFF;
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(29, 177, 15), 0 -10px 20px #10921b, 0 -18px 40px rgb(9, 131, 19);   
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;   
 }
 
 #colorTurn {
@@ -28,6 +28,9 @@ h1 {
     width:75%;
     margin-bottom:2%;
     margin:auto;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    background-color:black;
 }
 
 #grid {
@@ -67,10 +70,13 @@ h1 {
     border:2px solid #157411;
     width:60%;
     height: 1.5em;
-    font-size: 2m;
+    font-size: 2.2em;
     margin:auto;
     margin-top:5%;
     padding:2%;
+    background-color:black;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    
 }
 
 footer {
@@ -98,16 +104,19 @@ footer {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: black;
     margin: 15% auto;
     padding: 20px;
-    border: 2px solid #984843;
+    font-size: 2em;
+    border: 2px solid #157411;
     width: 80%; 
-    color: black;
+    color: white;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    letter-spacing: 2px;
 }
 
 .close {
-    color: #aaa;
+    color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -127,5 +136,5 @@ footer {
     border:2px solid black;
     font-size:125%;
     box-shadow: 0 -1px 4px rgb(255, 255, 255), 0 -2px 5px rgb(29, 177, 15), 0 -10px 10px #10921b, 0 -9px 20px rgb(9, 131, 19);
-    
+    text-shadow: 0 0 2px #FFF, 0 0 2px #FFF, 0 0 2px #FFF, 0 0 2px #49ff18, 0 0 2px #49FF18, 0 0 2px #49FF18, 0 0 2px #49FF18, 0 0 2px #49ff18;
 }

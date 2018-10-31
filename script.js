@@ -29,9 +29,11 @@ function drawBoard() {
 		for (col = 0; col<=6; col++) {
 			for (row = 0; row<=6; row++) {		
 				 if (jeu[row][col]==1) { 													//verify if the number in the array is 0
-					document.getElementById("cell"+row+col).style.backgroundColor="#0000CD";
+					document.getElementById("cell"+row+col).style.backgroundColor="#4169E1";
+					document.getElementById("cell"+row+col).style.boxShadow="0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18"
 				} else if (jeu[row][col]==2) { 													//verify if the number in the array is 0
-					document.getElementById("cell"+row+col).style.backgroundColor="red";
+					document.getElementById("cell"+row+col).style.backgroundColor="#A52A2A";
+					document.getElementById("cell"+row+col).style.boxShadow="0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18"
 				}
 			}	
 		}
@@ -43,9 +45,9 @@ function drawBoard() {
 		}
 		if (player == 1)
 		{
-			document.getElementById("colorTurn").style.color="yellow";
+			document.getElementById("colorTurn").style.color="#4169E1";
 		} else {
-			document.getElementById("colorTurn").style.color="red";
+			document.getElementById("colorTurn").style.color="#A52A2A";
 		}
 	}
 	
@@ -79,7 +81,7 @@ function drawBoard() {
 		function lookForWin() {
 			if (turn == 48){
 				//console.log("nul");
-				document.getElementById('winLose').innerHTML = "Plus de cases, cliquez sur Rejouer";
+				document.getElementById('winLose').innerHTML = "Plus de cases";
 				// Get the modal
 				var modal = document.getElementById('myModal');
 				var span = document.getElementsByClassName("close")[0];
@@ -152,9 +154,9 @@ function drawBoard() {
 			gameActive = false; 
 			document.getElementById('winLose').innerHTML = "Joueur gagnant: joueur " + winner; //set the winning player
 			if (player == 1){
-				document.getElementById("winLose").style.color="red";
+				document.getElementById("winLose").style.color="#A52A2A";
 			} else {
-				document.getElementById("winLose").style.color="yellow";
+				document.getElementById("winLose").style.color="#4169E1";
 			} 
 			document.getElementById("colorTurn").style.color="white";
 			document.getElementById("colorTurn").innerHTML="END";
